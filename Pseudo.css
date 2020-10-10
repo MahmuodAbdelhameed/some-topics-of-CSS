@@ -1,0 +1,68 @@
+/*Pseudo- elements & calsses*/
+/*Pseudo- elements*/
+/*::before & ::after*/
+h1::before {
+    content: url("download.jpg");
+}
+h1::after {
+    content: url("download.jpg");
+}
+/*::selection*/
+h1::selection {
+    color: lightblue;
+    background-color: lightcoral;
+}
+/*::first-line*/
+.first::first-line{
+    color: #0000ff;
+    font-variant: small-caps; /*small-caps*/
+}
+
+/*:first-letter*/
+.first::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+/* :first child*/
+aside p:first-child{
+    color: teal;
+}
+/*:last-child*/
+aside p:last-child{
+  color: red;
+}
+/*****************************************************/
+
+/*Pseudo-calsses*/
+form{
+    width: 500px;
+    height: 600px;
+    background-color: aliceblue;
+    position: absolute;
+    right: 35%;
+}
+input{
+    padding: 15px;
+    margin: 20px;
+    border:  solid 1px steelblue ;
+    position: relative;
+    left: 25%;
+    top: 15%;
+}
+.submit{
+    background-color: teal;
+}
+
+/* :hover */
+input:hover{
+    border: #ff0000 solid 1px;
+}
+.submit:active{
+    background-color: turquoise;
+}
+
+/*:active*/
+.submit: {
+    color: blue;
+    background-color: violet;
+}

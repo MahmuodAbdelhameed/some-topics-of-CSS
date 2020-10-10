@@ -1,0 +1,52 @@
+/*FLex-box*/
+.box {
+    background-color: blanchedalmond;
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction:/* row /*|* row-reverse /*|* column /*|* column-reverse/**//* Directons*/;
+    flex-wrap:/* nowrap /*|*/ wrap /*| wrap-reverse*/;
+    /*flex-flow: row wrap-reverse; /*(Direction and wrap)*/
+    /*justify-content:/*flex-start *|* flex-end |* center /*|*space-between /*|/* space-around /*|* space-evenly /*|* start /*|* end /*|* left /*| right ... + safe | unsafe*/;
+    /*align-items:/*stretch /*It's default value and respect the width and height in child* flex-start /*| flex-end | center | baseline |* first baseline /*| last baseline | start | end | self-start | self-end + ... safe | unsafe;*/
+
+}
+/*child*/
+.flex1,
+.flex2,
+.flex3,
+.flex4{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0px;
+    background-color: orange;
+    /*flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]*/   
+}
+
+/*child slectors*/
+.flex1{
+    order: 1;
+    background-color: blue;
+    /*flex-grow: 0;*
+    //flex-shrink: 3;*/
+}
+.flex2{
+    order: 2;
+    background-color: rebeccapurple;
+    /*flex-grow: 0;*
+    //flex-shrink: ;*/
+}
+.flex3{
+    order: 3;
+    background-color: red;
+    /*flex-grow:  0;*/
+    /*flex-shrink: 1;*/
+}
+.flex4{
+    order: 4;
+    /*flex-grow: 0;*
+    flex-shrink: 0;*
+    flex-basis: 200px;*/
+}
